@@ -1,11 +1,14 @@
 #!/usr/bin/python3
 
 class Square():
-
-    width = 0
-    height = 0
+    """
+    represents a square
+    """
 
     def __init__(self, width=0, height=0):
+        """
+        initializes a square with a width and height
+        """
         self.width = width
         self.height = height
 
@@ -14,9 +17,13 @@ class Square():
         return self.width * self.height
 
     def PermiterOfMySquare(self):
+        """ perimiter of a square"""
         return (self.width * 2) + (self.height * 2)
 
     def __str__(self):
+        """
+        returns a string rep of a square obj
+        """
         return "{}/{}".format(self.width, self.height)
 
 
